@@ -40,3 +40,46 @@ li {
   margin: 5px 0;
 }
 
+.gift-list {
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.gift-items {
+    list-style: none;
+    padding: 0;
+}
+
+.gift-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.gift-item:hover {
+    background: #f9f9f9;
+    transform: translateX(4px);
+}
+
+.gift-gender {
+    min-width: 100px;
+    font-weight: bold;
+}
+
+.gift-description {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.error {
+    color: #dc3545;
+    padding: 10px;
+    border-radius: 4px;
+    background: #ffe6e6;
+}

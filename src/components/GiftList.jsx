@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PocketBase from 'pocketbase';
+import { pb } from '../services/pocketbase';
 
 const GiftList = () => {
     const [gifts, setGifts] = useState([]);
@@ -22,11 +23,11 @@ const GiftList = () => {
     return (
         <div className="gift-list">
             <h2>Lista de Regalos</h2>
-            <ul>
+            <ul className="gift-items">
                 {gifts.map((gift) => (
-                    <li key={gift.id}>
-                        <p>Género: {gift.Genero}</p>
-                        <p>Descripción: {gift.Juguete}</p>
+                    <li key={gift.id} className="gift-item">
+                        <span className="gift-gender">{gift.Genero}</span>
+                        <span className="gift-description">{gift.Juguete}</span>
                     </li>
                 ))}
             </ul>
