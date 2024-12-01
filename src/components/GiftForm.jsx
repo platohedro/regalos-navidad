@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const GiftForm = ({ onGiftSubmit }) => {
@@ -8,6 +7,7 @@ const GiftForm = ({ onGiftSubmit }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         onGiftSubmit({ Genero: genero, Juguete: descripcion });
+        alert('¡Juguete registrado!'); // Add this line
         setGenero('');
         setDescripcion('');
     };

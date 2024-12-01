@@ -5,6 +5,9 @@ import Counter from './components/Counter';
 import GiftForm from './components/GiftForm';
 import GiftList from './components/GiftList';
 import './App.css';
+import { Route, BrowserRouter, Routes, Link } from 'react-router-dom';
+import FormPage from './pages/FormPage';
+
 
 function App() {
   const [gifts, setGifts] = useState([]);
@@ -54,12 +57,25 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Campaña de Regalos Solidarios</h1>
-      <Counter boysCount={boysCount} girlsCount={girlsCount} />
-      <GiftForm onGiftSubmit={handleGiftSubmit} />
-      <GiftList gifts={gifts} />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <nav className="mb-4">
+          <Link to="/" className="mr-4 text-blue-600 hover:text-blue-800">Inicio</Link>
+          <Link to="/registro" className="text-blue-600 hover:text-blue-800">Registrar Regalo</Link>
+        </nav>
+        
+        <Routes>
+          <Route path="/" element={
+            <>
+              <h1>Campaña de Regalos Solidarios</h1>
+              <Counter boysCount={boysCount} girlsCount={girlsCount} />
+              <GiftList gifts={gifts} />
+            </>
+          } />
+          <Route path="/registro" element={<FormPage onGiftSubmit={handleGiftSubmit} />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
