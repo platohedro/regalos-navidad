@@ -68,8 +68,8 @@ function App() {
           <Route path="/" element={
             <>
               <h1>Campaña de Regalos Solidarios</h1>
-              <Counter boysCount={boysCount} girlsCount={girlsCount} />
-              <GiftList gifts={gifts} />
+              <Counter boysCount={boysCount} girlsCount={girlsCount}   gifts={gifts}  />
+              {/* <GiftList gifts={gifts} /> */}
             </>
           } />
           <Route path="/registro" element={<FormPage onGiftSubmit={handleGiftSubmit} />} />
