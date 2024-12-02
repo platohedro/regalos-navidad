@@ -4,9 +4,8 @@ import GiftForm from '../components/GiftForm';
 
 const FormPage = ({ onGiftSubmit }) => {
   return (
-    <div className="min-h-screen bg-gray-100 py-8">
+    <div className="bg-counter-primary bg-opacity-70 py-8 rounded-lg shadow-lg">
       <div className="max-w-md mx-auto">
-        <h1 className="text-2xl font-bold text-center mb-6">Registrar Nuevo Regalo</h1>
         <GiftForm onGiftSubmit={onGiftSubmit} />
       </div>
     </div>
