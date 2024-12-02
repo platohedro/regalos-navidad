@@ -69,11 +69,11 @@ const Counter = ({ boysCount = 0, girlsCount = 0, genericCount = 0, gifts = [] }
           onMouseLeave={() => setHoveredGender(null)}
         >
           <h2 className="text-2xl font-bold text-segundo-color mb-2">👧 Regalos para Niñas</h2>
-          <p className="counter-number text-4xl font-bold text-secundary-color">{girlsCount}</p>
+          <p className="counter-number text-4xl font-bold text-segundo-color animate-bounce">{girlsCount}</p>
           <p className="text-lg text-segundo-color">Meta: {META}</p>
           <div className="w-full bg-gray-200 rounded-full h-2.5 mt-2">
             <div 
-              className="bg-segundo-color h-2.5 rounded-full transition-all duration-500 text-left"
+              className="bg-segundo-color h-2.5 rounded-full animate-pulse transition-all duration-500 text-left"
               style={{ width: `${girlsProgress}%` }}
             ></div>
           </div>
