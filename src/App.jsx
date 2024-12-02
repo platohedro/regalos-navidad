@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { pb } from './services/pocketbase';
 import Counter from './components/Counter';
-import GiftForm from './components/GiftForm';
-import GiftList from './components/GiftList';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 import { Route, BrowserRouter, Routes, Link } from 'react-router-dom';
 import FormPage from './pages/FormPage';
@@ -58,6 +57,7 @@ function App() {
 
   return (
     <BrowserRouter>
+        <Analytics />
       <div className="App">
         <nav className="mb-4">
           <Link to="/" className="mr-4 text-blue-600 hover:text-blue-800">Inicio</Link>
