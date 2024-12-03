@@ -22,6 +22,7 @@ Cada donativo, grande o pequeño, es una luz que hará brillar la Navidad de nue
 
 <p>Acá puedes ver cómo avanza la colecta de juguetes para los niños del faro </p>
 </p>
+<p className='pt-4'><b>Puedes llevar el donativo a Platohedro de Lunes a viernes de 8 AM a 5 PM</b> </p>
     </div>
   )
 }
