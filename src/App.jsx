@@ -58,7 +58,7 @@ function App() {
     <BrowserRouter>
       <Analytics />
       <div className="App">
-        <nav className="mb-4">
+        {/* <nav className="mb-4">
           <Link
             to="/"
             className="mr-4 text-segundo-color hover:text-counter-primary"
@@ -71,7 +71,7 @@ function App() {
           >
             Registrar Regalo
           </Link>
-        </nav>
+        </nav> */}
 
         <Routes>
           <Route
@@ -79,7 +79,7 @@ function App() {
             element={
               <>
                 <h1 className="font-oswald text-3xl">
-                  Campaña de Regalos Solidarios
+                  Campaña de Regalos Navidad en el Faro 
                 </h1>
                 <Description />
                 <Counter
